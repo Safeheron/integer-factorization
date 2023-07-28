@@ -31,8 +31,8 @@ link_libraries(
         SafeheronCryptoSuites
         -ldl)
 
-add_executable(factor_ecm main.cpp)
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 
-install(TARGETS factor_ecm
+install(TARGETS ${CMAKE_PROJECT_NAME}
         RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
 )
